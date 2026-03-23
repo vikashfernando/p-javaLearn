@@ -1,21 +1,28 @@
-public class Main{
-    public static void main(String[] args) {
+// Main class
+// Program starts from here
 
-        BankAccount account1 = new SavingsAccount("Vikash", 1001, 5000);
-        BankAccount account2 = new CurrentAccount("Nimal", 1002, 3000, 2000);
+public class Main {
+    public static void main(String[] args){
 
-        System.out.println("---- Savings Account ----");
+        // Create a savings account object
+        SavingsAccount account1 = new SavingsAccount("Vikash", 5000);
+
+        // Show first details
+        System.out.println("---- Account Details ----");
         account1.displayDetails();
-        account1.deposit(1000);
-        account1.withdraw(2000);
-        System.out.println("Updated Balance: " + account1.getBalance());
 
         System.out.println();
 
-        System.out.println("---- Current Account ----");
-        account2.displayDetails();
-        account2.deposit(500);
-        account2.withdraw(4000);
-        System.out.println("Updated Balance: " + account2.getBalance());
+        // Deposit money
+        account1.deposit(1000);
+
+        // Withdraw money
+        account1.withdraw(2000);
+
+        System.out.println();
+
+        // Show updated details
+        System.out.println("---- Updated Account Details ----");
+        account1.displayDetails();
     }
 }
