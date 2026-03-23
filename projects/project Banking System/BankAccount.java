@@ -14,12 +14,10 @@ abstract class BankAccount {
         this.balance = balance;
     }
 
-    // Getter method to read account holder name
+    // Getter
     public String getAccountHolderName() {
         return accountHolderName;
     }
-
-    // Getter method to read balance
     public double getBalance() {
         return balance;
     }
@@ -44,6 +42,7 @@ abstract class BankAccount {
     // Abstract method
     // Child class MUST write its own withdraw logic
     public abstract void withdraw(double amount);
+
 
     // Show account details
     public void displayDetails() {
