@@ -19,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/project Banking System" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/oop/encapsulation and inheritance" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/oop/test1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/practice/encapsulation, inheritance and polimorphism/Student Management System for a Private Institute" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
