@@ -4,8 +4,8 @@ public class Bus extends Transport{
 
     public Bus(String vehicleId,String route,int distance,int capacity,int feePerKm){
         super(vehicleId,route,distance);
-        this.capacity=capacity;
-        this.feePerKm=feePerKm;
+        setCapacity(capacity);
+        setFeePerKm(feePerKm);
     }
 
     public int getCapacity(){
