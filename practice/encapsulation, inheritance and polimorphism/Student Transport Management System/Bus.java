@@ -28,5 +28,4 @@ public class Bus extends Transport{
             System.out.println("invalid amount...");
         }
     }
-
 }
