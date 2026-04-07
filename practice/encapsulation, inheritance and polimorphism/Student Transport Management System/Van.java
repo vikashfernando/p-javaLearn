@@ -5,7 +5,7 @@ public class Van extends Transport{
     public Van(String vehicleId,String route,int distance,String ownerName,int feePerKm){
         super(vehicleId,route,distance);
         this.ownerName=ownerName;
-        this.feePerKm=feePerKm;
+        setFeePerKm(feePerKm);
     }
 
     public String getOwnerName(){
