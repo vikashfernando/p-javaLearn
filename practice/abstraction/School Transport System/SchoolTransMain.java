@@ -11,5 +11,9 @@ public class SchoolTransMain{
     Vehicle v3=new Taxi("pk2003","galleroad",20,false);
 
 
+    //check details
+
+
+
 
 }

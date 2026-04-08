@@ -2,7 +2,7 @@ public class Taxi extends Vehicle implements FeeCalculator{
     //attributes
     private Boolean hasAC;
     //constructor
-    public Taxi(String vehicleId,String route,int distance,Boolean hasAc){
+    public Taxi(String vehicleId,String route,int distance,Boolean hasAC){
         super(vehicleId,route,distance);
         this.hasAC=hasAC;
     }
