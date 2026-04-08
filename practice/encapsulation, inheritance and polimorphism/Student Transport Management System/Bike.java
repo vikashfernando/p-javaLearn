@@ -2,8 +2,8 @@ public class Bike extends Transport{
     private int parkingFee;
     private String helmetNumber;
 
-    public Bike(String vehicleId,String route,int distance,int parkingFee,String helmetNumber){
-        super(vehicleId,route,distance);
+    public Bike(String id,String name,int age,String vehicleId,String route,int distance,int parkingFee,String helmetNumber){
+        super(id,name,age,vehicleId,route,distance);
         this.helmetNumber=helmetNumber;
         setParkingFee(parkingFee);
     }
@@ -24,6 +24,12 @@ public class Bike extends Transport{
         }else{
             System.out.println("invalid parking fee amount...");
         }
+    }
+
+    @Override
+    public void calculateMonthlyFee(){
+        int fee=parkingFee*20;
+        System.out.println(fee);
     }
 }
 

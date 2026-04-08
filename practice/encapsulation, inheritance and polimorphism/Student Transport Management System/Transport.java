@@ -1,9 +1,10 @@
-public class Transport{
+public class Transport extends Student{
     private String vehicleId;
     private String route;
     private int distance;
 
-    public Transport(String vehicleId,String route,int distance){
+    public Transport(String id,String name,int age,String vehicleId,String route,int distance){
+        super(id,name,age);
         this.vehicleId=vehicleId;
         this.route=route;
         setDistance(distance);
@@ -18,7 +19,6 @@ public class Transport{
     public int getDistance(){
         return this.distance;
     }
-
     public void setVehicleId(String vehicleId){
         this.vehicleId=vehicleId;
     }
@@ -31,6 +31,11 @@ public class Transport{
         }else{
             System.out.println("invalid distance, pls check agin...");
         }
-
     }
+
+    public void calculateMonthlyFee(){
+        int monthlyFee=distance*20;
+        System.out.println(monthlyFee);
+    }
+
 }

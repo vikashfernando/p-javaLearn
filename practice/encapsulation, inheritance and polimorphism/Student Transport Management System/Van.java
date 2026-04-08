@@ -2,8 +2,8 @@ public class Van extends Transport{
     private String ownerName;
     private int feePerKm;
 
-    public Van(String vehicleId,String route,int distance,String ownerName,int feePerKm){
-        super(vehicleId,route,distance);
+    public Van(String id,String name,int age,String vehicleId,String route,int distance,String ownerName,int feePerKm){
+        super(id,name,age,vehicleId,route,distance);
         this.ownerName=ownerName;
         setFeePerKm(feePerKm);
     }
@@ -24,5 +24,11 @@ public class Van extends Transport{
         }else{
             System.out.println("invalid amount...");
         }
+    }
+
+    @Override
+    public void calculateMonthlyFee(){
+        int fee=(super.getDistance())*feePerKm*20;
+        System.out.println(fee);
     }
 }
