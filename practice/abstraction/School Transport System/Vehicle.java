@@ -1,4 +1,4 @@
-abstract class Vehicle {
+abstract class Vehicle implements FeeCalculator{
     //attributes
     private String vehicleId;
     private String route;
@@ -21,12 +21,14 @@ abstract class Vehicle {
     }
     //show details
     public void showBasicDetails(){
-        System.out.println("***********************");
         System.out.println(vehicleId);
         System.out.println(route);
         System.out.println(distance);
-        System.out.println("***********************");
     }
     //abstract method
     abstract void showVehicleType();
+    //interface method
+    @Override
+    public void calculateFee(){
+    }
 }

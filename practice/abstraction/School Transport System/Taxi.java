@@ -24,9 +24,7 @@ public class Taxi extends Vehicle implements FeeCalculator{
     @Override
     public void showBasicDetails(){
         System.out.println("***********************");
-        System.out.println(getVehicleId());
-        System.out.println(getRoute());
-        System.out.println(getDistance());
+        super.showBasicDetails();
         System.out.println(this.hasAC);
         System.out.println("***********************");
     }
